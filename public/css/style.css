@@ -1,0 +1,377 @@
+* {
+    margin: 0 px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    box-sizing: border-box;
+    width: 90%;
+    margin: 5%;
+    background-color: white;
+}
+
+#banner {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.datosArticulo {
+    width: 90%;
+    box-sizing: border-box;
+    border-top: 1px solid #ebebeb;
+    margin: 10px 5%;
+    padding: 15px;
+    position: relative;
+}
+
+.nav {
+    display: none;
+}
+
+.imagen {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 10px 5%;
+    padding: 15px;
+}
+
+#logo {
+    width: 50%;
+}
+
+.encabezado {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding-top: 3px;
+}
+
+#creaTuCuenta {
+    color: black;
+}
+
+#ingresa {
+    color: black;
+}
+
+#misCompras {
+    color: black;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h6.fraseHeader {
+    color: black;
+}
+
+h6.copyright {
+    text-align: center;
+}
+
+h4.aclaracion {
+    box-sizing: border-box;
+    width: 50%;
+    margin: 10px;
+    align-items: flex-end;
+    color: green;
+}
+
+.precioDesc {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.precio {
+    font-size: 18px;
+    width: 45%;
+    margin: 10px;
+}
+
+p {
+    font-size: 16px;
+    display: none;
+}
+
+main section article:hover p {
+    display: block;
+}
+
+main section article:hover {
+    box-shadow: 10px 10px 10px 10px rgb(100, 100, 100);
+}
+
+i {
+    font-size: 2em;
+    color: rgb(41, 41, 44);
+}
+
+
+/*hice el movimiento para todos los Iconos y el cambio de color solo para el footer*/
+
+i:hover {
+    font-size: 1rem;
+    color: blue;
+    transform: rotateZ(-45deg);
+    transition: all 3s;
+}
+
+#iconomano {
+    font-size: 1rem;
+    padding-left: 18vw;
+    padding-right: 8px;
+    color: black;
+}
+
+.fa-truck {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    top: -15px;
+}
+
+main section article:hover div .fa-truck {
+    transform: rotateZ(-90deg);
+    color: #39b54a;
+    transition: 3s
+}
+
+#barraMenu {
+    display: block;
+    border: none;
+}
+
+#barra {
+    margin-left: 50%;
+    color: blue
+}
+
+#lupa {
+    color: black;
+    font-size: 1rem;
+}
+
+input {
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.pie {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+article {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/*comienzo con htmlregister*/
+
+.mainRegistro {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    align-items: center;
+}
+
+.perfilCliente {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.compraVenta {
+    width: 3vw;
+    height: 3vh;
+    margin: 1rem;
+}
+
+.intereses {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.interes {
+    width: 3vw;
+    height: 3vh;
+    margin: 1rem;
+}
+
+#nombre {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#usuario {
+    margin-bottom: 1rem;
+}
+
+#foto {
+    margin-bottom: 1rem;
+}
+
+#password {
+    margin-bottom: 1rem
+}
+
+button {
+    margin: 1rem 2rem;
+}
+
+
+/*fom log */
+
+#nomUs {
+    width: 75vw;
+}
+
+#pass {
+    width: 75vw;
+}
+
+button {
+    width: 75vw;
+    margin-left: 1vw;
+    background-color: #eaeaea;
+}
+
+button:hover {
+    background-color: #0022AA;
+    color: #fff;
+}
+
+@media (min-width: 600px) {
+    main article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    article:hover {
+        box-shadow: 10px 10px 10px 10px rgb(100, 100, 100);
+    }
+    p {
+        font-size: 16px;
+        display: none;
+    }
+    main section article:hover p {
+        display: block;
+    }
+    article {
+        width: 45%;
+    }
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .pie {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1000px) {
+    main article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .nav {
+        display: block;
+        border: none;
+    }
+    #barraMenu {
+        display: none;
+        border: none;
+    }
+    #encabezadoUnido {
+        box-sizing: border-box;
+        border: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #logo {
+        width: 40%;
+        margin: 0 2vw;
+    }
+    input {
+        width: 40%;
+        height: 13%;
+        margin: 1vw 1vw;
+    }
+    .fraseHeader {
+        justify-content: flex-start;
+        width: 69%;
+        height: 5%;
+    }
+    #iconomano {
+        font-size: 0.75rem;
+        padding-left: 1vw;
+        padding-right: 8px;
+        color: black;
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    li {
+        font-size: 0.65rem;
+        width: 10vw;
+        display: inline-block;
+        margin-top: 8vh;
+    }
+    article {
+        width: 23%;
+    }
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .pie {
+        display: flex;
+        flex-direction: row;
+    }
+    .footCredCard {
+        width: 35vw;
+    }
+    .footSend {
+        width: 35vw;
+    }
+    .seguridad {
+        width: 35vw;
+    }
+    .copyright {
+        text-align: center;
+    }
+}
